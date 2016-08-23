@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94387FD91D6BD08400F27769 /* QFMoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94387FD81D6BD08400F27769 /* QFMoveView.m */; };
+		94387FDC1D6BD0C000F27769 /* UIView+move.m in Sources */ = {isa = PBXBuildFile; fileRef = 94387FDB1D6BD0C000F27769 /* UIView+move.m */; };
 		94F3DEEE1D6AF9EB00BA5A4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3DEED1D6AF9EB00BA5A4C /* main.m */; };
 		94F3DEF11D6AF9EB00BA5A4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3DEF01D6AF9EB00BA5A4C /* AppDelegate.m */; };
 		94F3DEF41D6AF9EB00BA5A4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3DEF31D6AF9EB00BA5A4C /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94387FD71D6BD08400F27769 /* QFMoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QFMoveView.h; sourceTree = "<group>"; };
+		94387FD81D6BD08400F27769 /* QFMoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QFMoveView.m; sourceTree = "<group>"; };
+		94387FDA1D6BD0C000F27769 /* UIView+move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+move.h"; sourceTree = "<group>"; };
+		94387FDB1D6BD0C000F27769 /* UIView+move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+move.m"; sourceTree = "<group>"; };
 		94F3DEE91D6AF9EB00BA5A4C /* QFMoveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QFMoveView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F3DEED1D6AF9EB00BA5A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94F3DEEF1D6AF9EB00BA5A4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +64,10 @@
 		94F3DEEB1D6AF9EB00BA5A4C /* QFMoveView */ = {
 			isa = PBXGroup;
 			children = (
+				94387FDA1D6BD0C000F27769 /* UIView+move.h */,
+				94387FDB1D6BD0C000F27769 /* UIView+move.m */,
+				94387FD71D6BD08400F27769 /* QFMoveView.h */,
+				94387FD81D6BD08400F27769 /* QFMoveView.m */,
 				94F3DEEF1D6AF9EB00BA5A4C /* AppDelegate.h */,
 				94F3DEF01D6AF9EB00BA5A4C /* AppDelegate.m */,
 				94F3DEF21D6AF9EB00BA5A4C /* ViewController.h */,
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					94F3DEE81D6AF9EB00BA5A4C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = JP6B8Q8ZHH;
 					};
 				};
 			};
@@ -149,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94387FD91D6BD08400F27769 /* QFMoveView.m in Sources */,
 				94F3DEF41D6AF9EB00BA5A4C /* ViewController.m in Sources */,
 				94F3DEF11D6AF9EB00BA5A4C /* AppDelegate.m in Sources */,
+				94387FDC1D6BD0C000F27769 /* UIView+move.m in Sources */,
 				94F3DEEE1D6AF9EB00BA5A4C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +276,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QFMoveView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QianFan.QFMoveView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hualongxiang.moveView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -274,9 +288,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QFMoveView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = QianFan.QFMoveView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hualongxiang.moveView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +315,7 @@
 				94F3DF021D6AF9EB00BA5A4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

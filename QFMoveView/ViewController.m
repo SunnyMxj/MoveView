@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "QFMoveView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    QFMoveView *aView = [[QFMoveView alloc]initWithFrame:CGRectMake(0, 60, [UIScreen mainScreen].bounds.size.width, 0)];
+    aView.leftMargin = 10;
+    aView.rightMargin = 10;
+    aView.verticalInterval = 5;
+    aView.horizontalInterval = 5;
+    aView.widthHeightScale = 1.2;
+    NSMutableArray *data = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        [data addObject:[NSNull null]];
+    }
+    [aView setData:data];
+    [self.view addSubview:aView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
